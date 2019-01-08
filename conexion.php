@@ -1,22 +1,22 @@
 <?php
+$hostname = "servername";
+    $dbname = "dbname";
+    $username = "username";
+    $pw = "password";
+    $pdo = new PDO ("mssql:host=$hostname;dbname=$dbname","$username","$pw");
+  } catch (PDOException $e) {
+    echo "Failed to get DB handle: " . $e->getMessage() . "\n";
+    exit;
+  }
 
-$user="root";
-$pass="";
-$db_name= "proyecto_multimedia";
-$host = "localhost";
+  	  $sql = "select name FROM tbl_name";
+      $query = $pdo->prepare($sql);
+      $query->execute();
+     
+      for($i=0; $row = $query->fetch(); $i++){
+        echo $i." - ".$row['name']."<br/>";
+      }
 
-$db = mysqli_connect($host,$user,$pass,$db_name);
-
-/* si falla la conecion */
-if (mysqli_connect_errno()) {
-	printf("fallo la conexion: %S",mysqli_connect_error());
-	exit();
-	
-}
-
-
-mysqli_close($db);
-
-
-
+      unset($pdo);
+      unset($query);
 ?>
