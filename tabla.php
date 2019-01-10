@@ -24,9 +24,10 @@
 				      		echo "<th>".$row['nombres']."</th>";
 				      		echo "<th>".$row['apell_part']."</th>";
 				      		echo "<th>".$row['apell_mat']."</th>";
+				      		echo "</tr>";
 				      	}
 				      ?>
-				    </tr>
+				    
 				  </thead>
 			  </tbody>
 		  </table>
