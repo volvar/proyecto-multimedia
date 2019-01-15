@@ -20,6 +20,7 @@
   </script>
 </head>
 <body>
+  <?php include 'sidebar.php' ?>
   <!-- <menu>menu u otra cosa</menu> -->
   <div class="container">
     <div class="row col-md-8"></div>
