@@ -22,7 +22,7 @@
               INGRESAR
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Alumno</a>
+              <a class="dropdown-item" href="Ingresar alumno form.php">Alumno</a>
               <a class="dropdown-item" href="#">Profesor</a>
             </div>
           </li>

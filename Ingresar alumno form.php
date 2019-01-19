@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>FORM INGRESO PROTOTIPO</title>
   <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <!-- scripts para la dependecia de los selec -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script language="javascript">
   $(document).ready(function(){
@@ -99,17 +100,17 @@
         <div class="form-row">
           <div class="custom-control custom-radio">
 			  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-			  <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+			  <label class="custom-control-label" for="customRadio1">Estudiante</label>
 			</div>
 			<div class="custom-control custom-radio">
 			  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-			  <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+			  <label class="custom-control-label" for="customRadio2">Tesistas</label>
 			</div>
 			</div>
         <button type="submit" class="btn btn-primary" value="Submit">Ingresar</button>
       </form>  
     </div>
-
+	
 </body>
 </html>
 
