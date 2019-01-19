@@ -2,15 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Index direct</title>
+  <title>FORM INGRESO PROTOTIPO</title>
   <link rel="stylesheet" href="css/bootstrap.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
+<style>
+  body{ 
+     padding-top:60px; 
+    } 
+</style>
 </head>
 <body>
-  <?php include 'menu_direc.php'; ?>
+  <?php include 'menu_direc.php' ?> 
+<!-- FORMULARIO -->
+  <div class="container">
 
+  </div>
 
 </body>
 </html>
+
+
