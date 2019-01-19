@@ -62,23 +62,13 @@
             <input type="correo" class="form-control" id="correo" placeholder="correo">
           </div>
         </div>
-        
-        <!-- OTROS -->
-        
-        <div class="form-row">
-          <div class="form-group col-md-7">
-            <label for="correo">Correo</label>
-            <input type="correo" class="form-control" id="correo" placeholder="correo">
-          </div>
-          <div class="form-group col-md-5">
-            <label for="contacto">Numero de contacto</label>
-            <input type="contacto" class="form-control" id="contacto" placeholder="Telefono/Celular">
-          </div>
-        </div>
-        
     
         	<!-- CAMPUS Y CARRERA -->
         <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="contacto">Numero de contacto</label>
+            <input type="contacto" class="form-control" id="contacto" placeholder="Telefono/Celular">
+          </div>
           <div class="form-group col-md-3">
             <label for="campus">Campus</label>
             <select name="campus" id="campus" class="form-control">
@@ -86,7 +76,7 @@
               <option value="2">San Felipe</option>
             </select>
           </div>
-          <div class="form-group col-md-5">
+          <div class="form-group col-md-7">
             <label for="carrera">Carrera</label>
             <select name="carrera" id="carrera" class="form-control">
               <option value="1">Ingeniería Informática</option>
