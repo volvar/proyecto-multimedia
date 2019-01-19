@@ -37,8 +37,16 @@
         <!-- NOMBRE Y RUT -->
         <div class="form-row">
           <div class="form-group col-md-4">
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Nombres</label>
             <input type="nombre" class="form-control" id="nombre" placeholder="Nombre">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="nombre">Apellido Paterno</label>
+            <input type="nombre" class="form-control" id="nombre" placeholder="Apellido Paterno">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="nombre">Apellido Materno</label>
+            <input type="nombre" class="form-control" id="nombre" placeholder="Apellido Materno">
           </div>
           <div class="form-group col-md-3">
             <label for="rut">Rut</label>
@@ -48,8 +56,27 @@
             <label for="dv">DV</label>
             <input type="dv" class="form-control" id="dv" placeholder="dv">
           </div>
+          <div class="form-group col-md-8">
+            <label for="correo">Correo</label>
+            <input type="correo" class="form-control" id="correo" placeholder="correo">
+          </div>
         </div>
-        <!-- CAMPUS Y CARRERA -->
+        
+        <!-- OTROS -->
+        
+        <div class="form-row">
+          <div class="form-group col-md-7">
+            <label for="correo">Correo</label>
+            <input type="correo" class="form-control" id="correo" placeholder="correo">
+          </div>
+          <div class="form-group col-md-5">
+            <label for="contacto">Numero de contacto</label>
+            <input type="contacto" class="form-control" id="contacto" placeholder="Telefono/Celular">
+          </div>
+        </div>
+        
+    
+        	<!-- CAMPUS Y CARRERA -->
         <div class="form-row">
           <div class="form-group col-md-3">
             <label for="campus">Campus</label>
@@ -69,32 +96,17 @@
             </select>
           </div>
         </div>
-        <!-- OTROS -->
-        
         <div class="form-row">
-          <div class="form-group col-md-8">
-            <label for="correo">Correo</label>
-            <input type="correo" class="form-control" id="correo" placeholder="correo">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-8">
-            <label for="nombre"></label>
-            <input type="#" class="form-control" id="#" placeholder="#">
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <label for="estatus">Estatus academico</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Estudiante 
-            </label>
-
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Ingresar</button>
+          <div class="custom-control custom-radio">
+			  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+			  <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+			</div>
+			<div class="custom-control custom-radio">
+			  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+			  <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+			</div>
+			</div>
+        <button type="submit" class="btn btn-primary" value="Submit">Ingresar</button>
       </form>  
     </div>
 
