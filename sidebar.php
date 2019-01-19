@@ -32,20 +32,37 @@
   
 		<!-- dropdown -->
 <div class="container">
-    <div class="row col-md-8"><ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 3</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 4</a>
-    </li>
-  </ul></div>
+    <div class="row col-md-8">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ingresar
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">alum</a>
+          <a class="dropdown-item" href="#">profe</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          generar
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">estad</a>
+          <a class="dropdown-item" href="#">doc</a>
+        </div>
+      </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">obs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">horario</a>
+        </li>
+        
+  </ul>
+
+</div>
     <div class="row col-md-4">
       <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle" type="button" id="dropdown1" data-toggle="dropdown">
