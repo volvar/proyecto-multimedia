@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FORM INGRESO PROTOTIPO</title>
+  <title>FORM INGRESO PROFESORES</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <!-- scripts para la dependecia de los selec -->
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
@@ -20,13 +20,13 @@
   });
   </script>
 <style>
-	body{ 
+  body{ 
      padding-top:60px; 
     } 
 </style>
 </head>
 <body>
-	<?php include 'menu_direc.php' ?>	
+  <?php include 'menu_direc.php' ?> 
 <!-- FORMULARIO -->
   <div class="container">
     <div class="row col-md-8">
@@ -62,23 +62,13 @@
             <input type="correo" class="form-control" id="correo" placeholder="correo">
           </div>
         </div>
-        
-        <!-- OTROS -->
-        
+    
+          <!-- CAMPUS Y CARRERA -->
         <div class="form-row">
-          <div class="form-group col-md-7">
-            <label for="correo">Correo</label>
-            <input type="correo" class="form-control" id="correo" placeholder="correo">
-          </div>
-          <div class="form-group col-md-5">
+          <div class="form-group col-md-2">
             <label for="contacto">Numero de contacto</label>
             <input type="contacto" class="form-control" id="contacto" placeholder="Telefono/Celular">
           </div>
-        </div>
-        
-    
-        	<!-- CAMPUS Y CARRERA -->
-        <div class="form-row">
           <div class="form-group col-md-3">
             <label for="campus">Campus</label>
             <select name="campus" id="campus" class="form-control">
@@ -86,7 +76,7 @@
               <option value="2">San Felipe</option>
             </select>
           </div>
-          <div class="form-group col-md-5">
+          <div class="form-group col-md-7">
             <label for="carrera">Carrera</label>
             <select name="carrera" id="carrera" class="form-control">
               <option value="1">Ingeniería Informática</option>
@@ -99,18 +89,18 @@
         </div>
         <div class="form-row">
           <div class="custom-control custom-radio">
-			  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-			  <label class="custom-control-label" for="customRadio1">Estudiante</label>
-			</div>
-			<div class="custom-control custom-radio">
-			  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-			  <label class="custom-control-label" for="customRadio2">Tesistas</label>
-			</div>
-			</div>
+        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio1">Estudiante</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio2">Tesistas</label>
+      </div>
+      </div>
         <button type="submit" class="btn btn-primary" value="Submit">Ingresar</button>
       </form>  
     </div>
-	
+  
 </body>
 </html>
 
