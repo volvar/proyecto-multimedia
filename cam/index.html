@@ -27,13 +27,22 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 <canvas id="canvas" width="640" height="480"></canvas>
 <script>// Elements for taking the snapshot
 var canvas = document.getElementById('canvas');
-var context = canvas.getContext('2d');
+var contexto = canvas.getContext('2d');
 var video = document.getElementById('video');
 
 // Trigger photo take
 document.getElementById("snap").addEventListener("click", function() {
-   var img = context.drawImage(video, 0, 0, 640, 480);
-
+   contexto.drawImage(video, 0, 0, 640, 480);
+var link = window.document.createElement( 'a' ),
+                        url = canvas.toDataURL(),
+                        filename = 'screenshot.jpg';
+ 
+                    link.setAttribute( 'href', url );
+                    link.setAttribute( 'download', filename );
+                    link.style.visibility = 'hidden';
+                    window.document.body.appendChild( link );
+                    link.click();
+                    window.document.body.removeChild( link );
 });
 
 
