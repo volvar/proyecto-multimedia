@@ -13,7 +13,6 @@
 </head>
 <body>
   <?php include 'menu_direc.php' ?> 
-<!-- FORMULARIO -->
   <div class="container">
 
   </div>
