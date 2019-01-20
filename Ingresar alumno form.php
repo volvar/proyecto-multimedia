@@ -34,7 +34,7 @@
     </div>
   </div>
     <div class="container ">
-      <form method="post">
+      <form action="#" method="POST" enctype="#/form-data"/>
         <!-- NOMBRE Y RUT -->
         <div class="form-row">
           <div class="form-group col-md-4">
@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="form-group-row">
-          <label for="#"></label>
+          <label for="tipoEstudante"></label>
           <div class="custom-control custom-radio">
         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
         <label class="custom-control-label" for="customRadio1">Estudiante</label>
@@ -102,15 +102,22 @@
           <div class="input-group mb-3">
             <div class="input-group mb-3">
               <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile02">
-                <label class="custom-file-label" for="inputGroupFile02"></label>
+                <input type="file" class="custom-file-input" id="archivo" name="archivo">
+                <label class="custom-file-label" for="imagen"></label>
               </div>
             </div>
           </div>
+
+        
+
+
+
+        
         <button type="submit" class="btn btn-primary" value="Submit">Ingresar</button>
-      </form>  
+      </form> 
+
+
     </div>
-	
 </body>
 </html>
 
