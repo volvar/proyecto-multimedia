@@ -23,7 +23,10 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 </head>
 <body>
 <video id="video" width="640" height="480" autoplay></video>
+<form action="guardar.php" method="POST">
+<input id="url" name="url" type="hidden" />
 <button id="snap">Snap Photo</button>
+</form>
 <canvas id="canvas" width="640" height="480"></canvas>
 <script>// Elements for taking the snapshot
 var canvas = document.getElementById('canvas');
@@ -37,12 +40,11 @@ var link = window.document.createElement( 'a' ),
                         url = canvas.toDataURL(),
                         filename = 'screenshot.jpg';
  
-                    link.setAttribute( 'href', url );
-                    link.setAttribute( 'download', filename );
-                    link.style.visibility = 'hidden';
-                    window.document.body.appendChild( link );
-                    link.click();
-                    window.document.body.removeChild( link );
+                document.getElementById("url").value=url;
+
+    imagen.setAttribute('src', convertirImagen('images/imagen.png');
+var base64 = getBase64Image(document.getElementById("img"));
+console.log(base64);
 });
 
 
