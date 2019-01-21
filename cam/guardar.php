@@ -11,9 +11,10 @@ $data = base64_decode($base_to_php[1]);
 // here you can detect if type is png or jpg if you want
 $filepath = "img/"; // or image.jpg
 $name = uniqid();
-$filepath = $filepath.$name.".png";
+$filepath = $filepath.$name.".jpg";
 
 // Save the image in a defined path
 file_put_contents($filepath,$data);
-echo "<img src='".$filepath."'>";
+header("Location: crop.php?var1=$filepath");
+
  ?>
