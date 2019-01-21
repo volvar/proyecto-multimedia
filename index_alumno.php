@@ -61,35 +61,24 @@
             <input type="dv" class="form-control" id="dv" placeholder="dv">
           </div>
           <div class="form-group col-md-8">
-            <label for="correo">Correo</label>
-            <input type="correo" class="form-control" id="correo" placeholder="correo">
+            <label for="correo">Correo Institucional</label>
+            <input type="correo" class="form-control" id="correo" placeholder="Correo Institucional">
           </div>
         </div>
-    
-        	<!-- CAMPUS Y CARRERA -->
-        <div class="form-row">
-          <div class="form-group col-md-2">
-            <label for="contacto">Numero de contacto</label>
-            <input type="contacto" class="form-control" id="contacto" placeholder="Telefono/Celular">
-          </div>
-          <div class="form-group col-md-3">
-            <label for="campus">Campus</label>
-            <select name="campus" id="campus" class="form-control">
-              <option value="1">Valparaíso</option>
-              <option value="2">San Felipe</option>
-            </select>
-          </div>
-          <div class="form-group col-md-7">
+         <div class="form-row">
+          <div class="form-group col-md-4">
             <label for="carrera">Carrera</label>
-            <select name="carrera" id="carrera" class="form-control">
-              <option value="1">Ingeniería Informática</option>
-              <option value="2">Ingeniería Civil Ambiental</option>
-              <option value="3">Ingeniería Civil Industrial</option>
-              <option value="4">Ingeniería en Estadística</option>
-              <option value="5">Ingeniería Ambiental</option>  
-            </select>
+            <input type="carrera" class="form-control" id="carrera" placeholder="Carrera">
           </div>
-        </div>
+          <div class="form-group col-md-8">
+            <label for="correo">Correo Personal</label>
+            <input type="correo" class="form-control" id="correo" placeholder="Correo Personal">
+          </div>
+        </div>       
+
+
+
+
         <div class="form-group-row">
           <label for="tipoEstudante"></label>
           <div class="custom-control custom-radio">
