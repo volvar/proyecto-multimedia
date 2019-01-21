@@ -17,16 +17,7 @@
       <!-- despl Ingresar -->
       <div class="container">
         <ul class="navbar-nav">
-          <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              ------------
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">L</a>
-              <a class="dropdown-item" href="#">LL</a>
-            </div>
-          </li>
-        <!-- fin ingresar -->
+
         <!-- despl generar -->
         <li class="nav-item active">
           <a class="nav-link" href="#">HACER OBSERVACION</a>
