@@ -6131,8 +6131,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 756,
-									"top": 829,
+									"left": 713,
+									"top": 906,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -6164,7 +6164,7 @@
 								"$ref": "AAAAAAFoLx700u2wVpk="
 							},
 							"lineStyle": 0,
-							"points": "713:927;713:927",
+							"points": "676:856;676:835;742:836;742:891;713:891",
 							"nameLabel": {
 								"$ref": "AAAAAAFobUAbUUtzwwI="
 							}
