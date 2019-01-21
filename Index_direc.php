@@ -53,7 +53,7 @@
 		  <div class="card border-secondary">
 		    <img class="card-img-top" src="img_3.jpg" alt="Card image cap">
 		    <div class="card-body text-secontary text-justify">
-		      <h5 class="card-title ">Horario de salas</h5>
+		      <h5 class="card-title "> <a class="nav-link" href="#">Horario de salas</a></h5>
 		    </div>
 		  </div>
 		</div>
