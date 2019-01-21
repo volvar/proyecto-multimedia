@@ -1,0 +1,15 @@
+campus borrar 
+carrera borrar
+correo personal y universidad
+por correo al administrado
+xammp para usar coreo mercuri 
+pagina de inicio el horario
+poder recuperar las clave
+observacion tiene que ir a las bitacora que se mande al coordinador y la imagen sea un link
+observaciones cambiar bitacora 
+eliminar la habilitacion de alumnos
+eliminar cupos , laboratirio tiene cantidad de cupos 
+trabajar TODO con el rut del profe(el ramo no va asociado a un profe)
+borrar archivo
+borrar numero de piso
+
