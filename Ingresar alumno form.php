@@ -4,21 +4,6 @@
   <meta charset="UTF-8">
   <title>FORM INGRESO ALUMNOS</title>
   <link rel="stylesheet" href="css/bootstrap.css">
-  <!-- scripts para la dependecia de los selec -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script language="javascript">
-  $(document).ready(function(){
-      $("#campus").on('change', function () {
-          $("#campus option:selected").each(function () {
-              elegido=$(this).val();
-              $.post("modelos.php", { elegido: elegido }, function(data){
-                  $("#carrera").html(data);
-              });     
-          });
-     });
-  });
-  </script>
 <style>
 	body{ 
      padding-top:60px; 
@@ -57,35 +42,22 @@
             <label for="dv">DV</label>
             <input type="dv" class="form-control" id="dv" placeholder="dv">
           </div>
-          <div class="form-group col-md-8">
-            <label for="correo">Correo</label>
-            <input type="correo" class="form-control" id="correo" placeholder="correo">
-          </div>
-        </div>
-    
-        	<!-- CAMPUS Y CARRERA -->
-        <div class="form-row">
-          <div class="form-group col-md-2">
+           <div class="form-group col-md-2">
             <label for="contacto">Numero de contacto</label>
             <input type="contacto" class="form-control" id="contacto" placeholder="Telefono/Celular">
           </div>
-          <div class="form-group col-md-3">
-            <label for="campus">Campus</label>
-            <select name="campus" id="campus" class="form-control">
-              <option value="1">Valparaíso</option>
-              <option value="2">San Felipe</option>
-            </select>
+        </div>
+    
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="correo">Correo Institucional</label>
+            <input type="correo" class="form-control" id="correo" placeholder="correo">
           </div>
-          <div class="form-group col-md-7">
-            <label for="carrera">Carrera</label>
-            <select name="carrera" id="carrera" class="form-control">
-              <option value="1">Ingeniería Informática</option>
-              <option value="2">Ingeniería Civil Ambiental</option>
-              <option value="3">Ingeniería Civil Industrial</option>
-              <option value="4">Ingeniería en Estadística</option>
-              <option value="5">Ingeniería Ambiental</option>  
-            </select>
+          <div class="form-group col-md-6">
+            <label for="correo">Correo Personal</label>
+            <input type="correo" class="form-control" id="correo" placeholder="correo">
           </div>
+        
         </div>
         <div class="form-group-row">
           <label for="tipoEstudante"></label>
@@ -98,21 +70,7 @@
         <label class="custom-control-label" for="customRadio2">Tesistas</label>
       </div>
       </div>
-          <!-- subir imagen -->
-          <div class="input-group mb-3">
-            <div class="input-group mb-3">
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="archivo" name="archivo">
-                <label class="custom-file-label" for="imagen"></label>
-              </div>
-            </div>
-          </div>
-
-        
-
-
-
-        
+         
         <button type="submit" class="btn btn-primary" value="Submit">Ingresar</button>
       </form> 
 
