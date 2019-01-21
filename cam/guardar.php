@@ -1,32 +1,19 @@
 <?php 
 
-	$var1 = $_POST['url'];
+$var1 = $_POST['url'];
+// baseFromJavascript will be the javascript base64 string retrieved of some way (async or post submited)
 
-	
-	if(strlen($var1) <= 0) exit("No se recibió ninguna imagen");
-//La imagen traerá al inicio data:image/png;base64, cosa que debemos remover
-$imagenCodificadaLimpia = str_replace("data:image/png;base64,", "", urldecode($var1));
+ // $_POST['base64']; //your data in base64 'data:image/png....';
+// We need to remove the "data:image/png;base64,"
+$base_to_php = explode(',', $var1);
+// the 2nd item in the base_to_php array contains the content of the image
+$data = base64_decode($base_to_php[1]);
+// here you can detect if type is png or jpg if you want
+$filepath = "img/"; // or image.jpg
+$name = uniqid();
+$filepath = $filepath.$name.".png";
 
-//Venía en base64 pero sólo la codificamos así para que viajara por la red, ahora la decodificamos y
-//todo el contenido lo guardamos en un archivo
-$imagenDecodificada = base64_decode($imagenCodificadaLimpia);
-
-//Calcular un nombre único
-$nombreImagenGuardada = "foto_" . uniqid() . ".jpg";
-
-//Escribir el archivo
-file_put_contents($nombreImagenGuardada, $imagenDecodificada);
-
-//Terminar y regresar el nombre de la foto
-exit($nombreImagenGuardada);
-echo file_get_contents($var1);
+// Save the image in a defined path
+file_put_contents($filepath,$data);
+echo "<img src='".$filepath."'>";
  ?>
-
-<!-- 
- link.setAttribute( 'href', url);
-                    link.setAttribute( 'href', filename);
-                    link.setAttribute( 'href', "guardar.php?name="+filename);
-                    link.style.visibility = 'hidden';
-                    window.document.body.appendChild( link );
-                    link.click();
-                    window.document.body.removeChild( link ); -->
