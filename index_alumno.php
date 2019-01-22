@@ -75,10 +75,6 @@
             <input type="correo" class="form-control" id="correo" placeholder="Correo Personal">
           </div>
         </div>       
-
-
-
-
         <div class="form-group-row">
           <label for="tipoEstudante"></label>
           <div class="custom-control custom-radio">
