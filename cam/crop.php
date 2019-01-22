@@ -2,9 +2,8 @@
   <link rel="stylesheet" href="css/cropper.css">
   <script src="js/cropper.js"></script>
 
-<img id="imga" style='width:250px;' src=
-<?php $var1 = $_GET['var1'];echo $var1; ?>
- > 
+<img id="imga" style='width:250px;' src= <?php $var1 = $_GET['var1'];echo $var1; ?>
+> 
 
      <script>
        $("#imga").cropper();
