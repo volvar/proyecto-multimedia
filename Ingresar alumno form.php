@@ -70,8 +70,8 @@
         <label class="custom-control-label" for="customRadio2">Tesistas</label>
       </div>
       </div>
-         
-        <button type="submit" class="btn btn-primary" value="Submit">Ingresar</button>
+         <a href="Ingresar alumno foto.php" class="btn btn-primary" role="button">Ingresar</a>
+       
       </form> 
 
 
