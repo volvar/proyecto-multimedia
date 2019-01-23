@@ -2646,7 +2646,7 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 453,
+									"left": 429,
 									"top": 882,
 									"width": 26,
 									"height": 26,
@@ -2667,7 +2667,7 @@
 							"showShadow": true,
 							"containerChangeable": false,
 							"containerExtending": false,
-							"left": 432,
+							"left": 408,
 							"top": 872,
 							"width": 68,
 							"height": 46,
@@ -2805,7 +2805,7 @@
 								"$ref": "AAAAAAFoOSnDSjITckQ="
 							},
 							"lineStyle": 2,
-							"points": "499:872;546:872;546:749",
+							"points": "475:872;546:872;546:749",
 							"nameLabel": {
 								"$ref": "AAAAAAFoOSuG6zI3hos="
 							}
@@ -6131,8 +6131,8 @@
 									"showShadow": true,
 									"containerChangeable": false,
 									"containerExtending": false,
-									"left": 756,
-									"top": 829,
+									"left": 713,
+									"top": 906,
 									"width": 0,
 									"height": 13,
 									"autoResize": false,
@@ -6164,7 +6164,7 @@
 								"$ref": "AAAAAAFoLx700u2wVpk="
 							},
 							"lineStyle": 0,
-							"points": "713:927;713:927",
+							"points": "676:856;676:835;742:836;742:891;713:891",
 							"nameLabel": {
 								"$ref": "AAAAAAFobUAbUUtzwwI="
 							}
@@ -8140,6 +8140,43 @@
 							"model": {
 								"$ref": "AAAAAAFoblkACk0nHBc="
 							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAFocOnmL19YUvs=",
+									"_parent": {
+										"$ref": "AAAAAAFoblkAC00py1c="
+									},
+									"model": {
+										"$ref": "AAAAAAFoblkACk0nHBc="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 1179,
+									"top": 334,
+									"width": 90.33349609375,
+									"height": 13,
+									"autoResize": false,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAFoblkAC00py1c="
+									},
+									"edgePosition": 1,
+									"underline": false,
+									"text": "el profe manda ",
+									"horizontalAlignment": 2,
+									"verticalAlignment": 5,
+									"wordWrap": false
+								}
+							],
 							"visible": true,
 							"enabled": true,
 							"lineColor": "#000000",
@@ -8156,7 +8193,10 @@
 								"$ref": "AAAAAAFoLwVkcezPUDw="
 							},
 							"lineStyle": 2,
-							"points": "1089:355;1360:355"
+							"points": "1089:355;1360:355",
+							"nameLabel": {
+								"$ref": "AAAAAAFocOnmL19YUvs="
+							}
 						},
 						{
 							"_type": "FCFlowView",
