@@ -1,0 +1,4 @@
+tipo de usuarios:
+0 == alumno
+1 == admin(coordinador, director)
+2 == profe
