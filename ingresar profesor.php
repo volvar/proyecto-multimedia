@@ -82,7 +82,7 @@ $foto= "cam/crops/".$foto;
         <label class="custom-control-label" for="customRadio2"> Honorario</label>
       </div>
       </div>
-       
+       <!-- <a href="Ingresaralumnofoto.php" class="btn btn-primary" role="button">Ingresar</a> -->
         <button type="submit" class="btn btn-primary" value="Submit">Ingresar</button>
       </form>  
     </div>
