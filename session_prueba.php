@@ -4,13 +4,10 @@ include 'conexion.php'
 	$nombre = $_POST['nombre'];
 
 	$rut = $_POST['rut'];
-
-
 	
 	session_start();
 	$_SESSION["usuario"] = "$nombre";	
 	$_SESSION["contraseña"] = "$rut";
-
 
 // establecer tiempo de inactividad
 	$inactividad =600;
