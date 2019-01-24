@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-01-2019 a las 02:40:34
+-- Tiempo de generación: 24-01-2019 a las 03:32:25
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 7.2.11
 
@@ -45,12 +45,13 @@ CREATE TABLE `persona` (
   `nombres` varchar(50) NOT NULL,
   `apell_pat` varchar(50) NOT NULL,
   `apell_mat` varchar(50) NOT NULL,
-  `correo` varchar(50) NOT NULL,
+  `correo_institucional` varchar(50) NOT NULL,
   `telefono` int(9) NOT NULL,
   `tipo_usario` varchar(50) NOT NULL,
-  `id_login` int(11) NOT NULL,
-  `id_sala` int(11) NOT NULL,
-  `id_usuario` int(255) NOT NULL
+  `id_login` int(255) NOT NULL,
+  `id_sala` int(255) NOT NULL,
+  `id_usuario` int(255) NOT NULL,
+  `correo_personal` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -61,7 +62,8 @@ CREATE TABLE `persona` (
 
 CREATE TABLE `ramo` (
   `cod_ramo` int(255) NOT NULL,
-  `nom_ramo` varchar(50) NOT NULL
+  `nom_ramo` varchar(50) NOT NULL,
+  `rut` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -102,13 +104,17 @@ ALTER TABLE `login`
 -- Indices de la tabla `persona`
 --
 ALTER TABLE `persona`
-  ADD PRIMARY KEY (`rut`);
+  ADD PRIMARY KEY (`rut`),
+  ADD KEY `id_login` (`id_login`),
+  ADD KEY `id_sala` (`id_sala`),
+  ADD KEY `id_usuario` (`id_usuario`);
 
 --
 -- Indices de la tabla `ramo`
 --
 ALTER TABLE `ramo`
-  ADD PRIMARY KEY (`cod_ramo`);
+  ADD PRIMARY KEY (`cod_ramo`),
+  ADD KEY `rut` (`rut`);
 
 --
 -- Indices de la tabla `sala`
@@ -149,6 +155,24 @@ ALTER TABLE `sala`
 --
 ALTER TABLE `usuario`
   MODIFY `id_usuario` int(255) NOT NULL AUTO_INCREMENT;
+
+--
+-- Restricciones para tablas volcadas
+--
+
+--
+-- Filtros para la tabla `persona`
+--
+ALTER TABLE `persona`
+  ADD CONSTRAINT `persona_ibfk_1` FOREIGN KEY (`id_login`) REFERENCES `login` (`id_login`),
+  ADD CONSTRAINT `persona_ibfk_2` FOREIGN KEY (`id_sala`) REFERENCES `sala` (`id_sala`),
+  ADD CONSTRAINT `persona_ibfk_3` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`);
+
+--
+-- Filtros para la tabla `ramo`
+--
+ALTER TABLE `ramo`
+  ADD CONSTRAINT `ramo_ibfk_1` FOREIGN KEY (`rut`) REFERENCES `persona` (`rut`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
