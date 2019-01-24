@@ -82,8 +82,8 @@ $foto= "cam/crops/".$foto;
         <label class="custom-control-label" for="customRadio2">Tesistas</label>
       </div>
       </div>
-         <a href="Ingresaralumnofoto.php" class="btn btn-primary" role="button">Ingresar</a>
-       
+         <!-- <button class="btn btn-primary" role="button">Ingresar</button>  -->
+        <a href="Ingresaralumnofoto.php" class="btn btn-primary" role="button">Ingresar</a>
       </form> 
 
 
