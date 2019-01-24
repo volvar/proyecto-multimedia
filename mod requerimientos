@@ -1,0 +1,12 @@
+5 estados de usuarios
+
+1 profesor
+2 director
+3 coordinador
+4 mayordomo
+5 alumno
+
+formulario con ingreso de imagen.
+
+
+sesionstart("para matar la cookie y no volver al menu");

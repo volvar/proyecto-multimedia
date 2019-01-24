@@ -30,7 +30,7 @@
                 Login
               </a>
               <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink" >
-                <form class="pr-2 pl-2" action="logalumno.php" method="POST">
+                <form class="pr-2 pl-2" action="verificar.php" method="POST">
                   <div class="form-group"> 
                       <label for="usuario">Usuario:</label>
                       <input type="text" class="form-control" id="usuario" name="Usuario">
