@@ -1,0 +1,11 @@
+archivos basura desestimados eliminados listados a continuacion:
+
+-hola
+-conn.php
+-class.php
+-carrera.php
+-Ingresar alumno form.php
+-Ingresar alumno foto.php
+-mov_pag.php
+-proyecto_multimedia (1).sql
+-proyecto_multimedia .sql
