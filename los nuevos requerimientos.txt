@@ -1,0 +1,18 @@
+
+BD terminada
+        Panel de control de usuario
+o   Ingreso de usuario
+    §  Formulario de ingreso
+    §  Tomar de imagen del usuario
+    §  Crop de imagen
+o   Actualización
+o   eliminación (cambio de estado).
+o   Trabajo con secciones y permisos de usuarios.
+o   Creación de tarjetas de usuarios.
+o   Vista de credencial para mayor domo.
+o    importar y exportar excel.
+°   EDAD
+°   PROMOCION
+°    cambiar la ruta por nombre, crop por defecto
+°   guardar un temp que lo borre por un serip
+°   vista mayor domo 
