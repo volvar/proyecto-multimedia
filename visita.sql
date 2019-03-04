@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-03-2019 a las 21:49:57
+-- Tiempo de generación: 04-03-2019 a las 01:52:08
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 7.2.11
 
@@ -25,15 +25,16 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `estadística`
+-- Estructura de tabla para la tabla `visita`
 --
 
-CREATE TABLE `estadística` (
-  `id_estadisticas` int(255) NOT NULL,
+CREATE TABLE `visita` (
+  `id_visita` int(255) NOT NULL,
   `fecha` date NOT NULL,
-  `hor_entra` date NOT NULL,
-  `hor_sali` date NOT NULL,
-  `observacion` varchar(255) NOT NULL
+  `hora_sali` date NOT NULL,
+  `hora_entra` date NOT NULL,
+  `observacion` varchar(255) NOT NULL,
+  `num_lab` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -41,20 +42,20 @@ CREATE TABLE `estadística` (
 --
 
 --
--- Indices de la tabla `estadística`
+-- Indices de la tabla `visita`
 --
-ALTER TABLE `estadística`
-  ADD PRIMARY KEY (`id_estadisticas`);
+ALTER TABLE `visita`
+  ADD PRIMARY KEY (`id_visita`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `estadística`
+-- AUTO_INCREMENT de la tabla `visita`
 --
-ALTER TABLE `estadística`
-  MODIFY `id_estadisticas` int(255) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `visita`
+  MODIFY `id_visita` int(255) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
