@@ -13,7 +13,6 @@ EthernetServer servidor(80);
 String pase="";
 String rfid1 = "";
 String rfid2;
-String facultad = "ciencias";
 const int RST_PIN = 9;            // Pin 9 para el reset del RC522
 const int SS_PIN = 8;            // Pin 10 para el SS (SDA) del RC522
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Crear instancia del MFRC522
@@ -73,50 +72,14 @@ void loop()
     cliente.println("<!DOCTYPE html>");
     cliente.println("<html lang='es'>");
     cliente.println("<head>");
-    cliente.println("<title>Ingresa Alumno</title>");
+    cliente.println("<title></title>");
     cliente.println("<meta charset='utf-8'>");
     cliente.println("</head>");
 
     cliente.println("<body>");
 
-    cliente.println("<form action='http://192.168.16.102/arduino/rfid_reg.php' method='POST'>");
-    cliente.println("<label for='nombres'>Nombres: </label>");
-    cliente.println("<input type='text' name='nombres'>");
-    cliente.println("<br>");
-    cliente.println("<label for='apell_pat'>apellido paterno: </label>");
-    cliente.println("<input type='text' name='apell_pat'>");
-    cliente.println("<br>");
-    cliente.println("<label for='apell_mat'>apellido materno: </label>");
-    cliente.println("<input type='text' name='apell_mat'>");
-    cliente.println("<br>");
-    cliente.println("<label for='rut'>Rut: </label>");
-    cliente.println("<input type='text' name='rut'>");
-    cliente.println("<br>");
-    cliente.println("<label for='dv'>Digito verificador: </label>");
-    cliente.println("<input type='text' name='dv'>");
-    cliente.println("<br>");
-    cliente.println("<label for='carrera'>Carrera: </label>");
-    cliente.println("<input type='text' name='carrera'>");
-    cliente.println("<br>");
-    cliente.println("<label for='promocion'>Promocion: </label>");
-    cliente.println("<input type='text' name='promocion'>");
-    cliente.println("<br>");
-    cliente.println("<label for='telefono'>Telefono: </label>");
-    cliente.println("<input type='text' name='telefono'>");
-    cliente.println("<br>");
-    cliente.println("<label for='correo'>Correo: </label>");
-    cliente.println("<input type='text' name='correo'>");
-    cliente.println("<br>");
-    cliente.println("<label for='direccion'>Direccion: </label>");
-    cliente.println("<input type='text' name='direccion'>");
-    cliente.println("<br>");
-    cliente.print("<label for='tarjeta'>Tarjeta: ");
-    cliente.print(rfid2);
-    cliente.println("</label>");
+    cliente.println("<form action='http://192.168.16.102/proyecto-multimedia/creartarjeta/ingresar-tarjeta.html' method='POST'>");
     cliente.print("<input type='hidden' name='tarjeta' value='");
-    cliente.print(rfid2);
-    cliente.print("'>");
-    cliente.println("<br>");
     cliente.println(" <input type='submit' value='Submit'>");
     cliente.println("</form>");
 
@@ -130,4 +93,3 @@ void loop()
   }
   
 }
-

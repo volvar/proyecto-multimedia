@@ -43,7 +43,7 @@ include 'conexion.php';
 			$insertar=$consulta->execute();
 			$consulta2=$pdo->prepare($sql3);
 			$insertar=$consulta2->execute();
-			echo "datos insertados";
+			header('Location: ingresar-tarjeta.html?rut='.$rutf)
 		}
 		else{
 			echo "no se puede insertar";

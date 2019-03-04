@@ -39,7 +39,7 @@
 		      		<a class="nav-link" href="#">Generar pdf</a>
 		      	</li>
 		      	<li>
-		      		<a class="nav-link" href="#">Generar estadisticas</a>
+		      		<a class="nav-link" href="estadisticas.php">Generar estadisticas</a>
 		      	</li>
 		      </ul>
 		    </div>
