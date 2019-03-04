@@ -1,0 +1,18 @@
+priscila
+	
+	-organizar menus
+	-calendario
+	-observaciones con se incluye la insercion en la base de datos(recuerda que lleva una foto)
+
+parada
+
+	-importar y exportar a excel
+	-login multiuso
+	-modificar y eliminar
+
+diego
+
+	-insertar(arreglar)
+	-terminar las estadisticas
+	-pdf
+	-arduino
