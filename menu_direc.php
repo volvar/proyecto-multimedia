@@ -34,7 +34,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="form-pdf.php">Pdf</a>
-              <a class="dropdown-item" href="#">Estadisticas</a>
+              <a class="dropdown-item" href="estadisticas.php">Estadisticas</a>
             </div>
           </li>
         <!-- fin ingresar -->
