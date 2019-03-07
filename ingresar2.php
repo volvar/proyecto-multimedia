@@ -14,22 +14,22 @@ include 'conexion.php';
 	$foto = $_POST['foto'];
 	$rutf = $rut."-".$dv;
 
-	$sql = "INSERT INTO persona (rut, nombres, apell_pat, apell_mat, correo, correo2, telefono, tipo_usario, foto) VALUES ('$rutf', '$nombre', '$apell_pat', '$apell_mat', '$correo', '$correo2', '$contacto', '$tipo', '$foto')";
+	$sql = "INSERT INTO persona (rut, nombres, apell_pat, apell_mat, correo_institucional, telefono, tipo_usario, correo_personal, foto) VALUES ('$rutf','$nombre','$apell_pat','$apell_mat','$correo','$contacto','$tipo','$correo2','$foto')";
 
 
 
 	
 	$sql5 = "SELECT rut FROM persona";
-	$sql6 = "SELECT id_usuario FROM usuario";
+	$sql6 = "SELECT rut FROM usuario";
 
 	foreach ($pdo->query($sql5) as $row) {
 	if ($row['rut'] == $rutf) {
 		$cont++;
 		}
 	foreach ($pdo->query($sql6) as $row2) {
-	if ($row['id_usuario'] == $row2['id_usuario']) {
+	if ($row['rut'] == $rutf) {
 		$cont2++;
-		$id_usuario=$row2['id_usuario'];
+		$rut=$row2['rut'];
 		}
 	}	
 	}
@@ -42,8 +42,8 @@ include 'conexion.php';
 			$consulta=$pdo->prepare($sql);
 			$insertar=$consulta->execute();
 			$consulta2=$pdo->prepare($sql3);
-			$insertar=$consulta2->execute();
-			header('Location: ingresar-tarjeta.html?rut='.$rutf)
+			$insertar2=$consulta2->execute();
+			header('Location: 192,168,16,117?rut='.$rutf);
 		}
 		else{
 			echo "no se puede insertar";

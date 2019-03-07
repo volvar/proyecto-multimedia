@@ -14,7 +14,8 @@ include 'conexion.php';
 	$foto = $_POST['foto'];
 	$rutf = $rut."-".$dv;
 
-	$sql = "INSERT INTO persona (rut, nombres, apell_pat, apell_mat, correo, correo2, telefono, tipo_usario, foto) VALUES ('$rutf', '$nombre', '$apell_pat', '$apell_mat', '$correo', '$correo2', '$contacto', '$estudiante', '$foto')";
+$sql = "INSERT INTO persona (rut, nombres, apell_pat, apell_mat, correo_institucional, telefono, tipo_usario, correo_personal, foto) VALUES ('$rutf','$nombre','$apell_pat','$apell_mat','$correo','$contacto','$estudiante','$correo2','$foto')";
+
 
 
 
@@ -42,7 +43,7 @@ include 'conexion.php';
 			$consulta=$pdo->prepare($sql);
 			$insertar=$consulta->execute();
 			$consulta2=$pdo->prepare($sql3);
-			$insertar=$consulta2->execute();
+			$insertar2=$consulta2->execute();
 			echo "datos insertados";
 		}
 		else{

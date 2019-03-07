@@ -33,7 +33,7 @@
               GENERAR
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Pdf</a>
+              <a class="dropdown-item" href="form-pdf.php">Pdf</a>
               <a class="dropdown-item" href="#">Estadisticas</a>
             </div>
           </li>

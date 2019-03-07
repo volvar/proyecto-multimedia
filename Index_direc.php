@@ -36,10 +36,10 @@
 		      <h5 class="card-title ">Generar</h5>
 		      <ul>
 		      	<li>
-		      		<a class="nav-link" href="#">Generar pdf</a>
+		      		<a class="nav-link" href="form-pdf.php">Generar pdf</a>
 		      	</li>
 		      	<li>
-		      		<a class="nav-link" href="estadisticas.php">Generar estadisticas</a>
+		      		<a class="nav-link" href="#">Generar estadisticas</a>
 		      	</li>
 		      </ul>
 		    </div>
