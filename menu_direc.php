@@ -22,8 +22,8 @@
               INGRESAR
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="Ingresaralumnoform.php">Alumno</a>
-              <a class="dropdown-item" href="ingresar profesor.php">Profesor</a>
+              <a class="dropdown-item" href="Ingresaralumnofoto.php">Alumno</a>
+              <a class="dropdown-item" href="ingresaprofefoto.php">Profesor</a>
             </div>
           </li>
         <!-- fin ingresar -->

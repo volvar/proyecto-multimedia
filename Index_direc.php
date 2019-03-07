@@ -22,10 +22,10 @@
 		      <h5 class="card-title">Ingresar</h5>
 		      <ul>
 		      	<li>
-		      		<a class="nav-link" href="Ingresar alumno form.php">Ingresar alumno</a>
+		      		<a class="nav-link" href="ingresaralumnofoto.php">Ingresar alumno</a>
 		      	</li>
 		      	<li>
-		      		<a class="nav-link" href="ingresar profesor.php">Ingresar profesor</a>
+		      		<a class="nav-link" href="ingresaprofefoto.php">Ingresar profesor</a>
 		      	</li>
 		      </ul>
 		    </div>
