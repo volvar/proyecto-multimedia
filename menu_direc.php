@@ -26,6 +26,9 @@
               <a class="dropdown-item" href="ingresaprofefoto.php">Profesor</a>
             </div>
           </li>
+          <li class="nav-item active">
+          <a class="nav-link" href="http://169.254.243.15/">Activar profesor</a>
+        </li>
         <!-- fin ingresar -->
         <!-- despl generar -->
           <li class="nav-item  dropdown active">
